@@ -10,6 +10,8 @@ public class FirstSeleniumTest {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\ASUS\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
+        driver.get("https://amazon.com");
+        driver.close();
 
     }
 }
