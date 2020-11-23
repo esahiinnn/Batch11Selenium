@@ -11,6 +11,7 @@ public class FirstSeleniumTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         driver.get("https://amazon.com");
+        driver.get("https://twitter.com");
         driver.close();
 
     }
