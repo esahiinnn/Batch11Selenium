@@ -63,7 +63,6 @@ public class LocatorsIntro {
                 System.out.println("Kullanici girisi basarisiz");
             }
         //      f. Expected user id nin testtechproed@gmail.com oldugunu dogrulayin(verify).
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         String expectedEmail = "testtechproed@gmail.com";
 
             if(userName.getText().equals(expectedEmail)){
