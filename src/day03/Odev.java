@@ -1,6 +1,7 @@
 package day03;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,8 +33,8 @@ public class Odev {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement searchBox = driver.findElement(By.name("q"));
         String arananKelime = "city bike";
-        searchBox.sendKeys(arananKelime);
-        searchBox.submit();
+        searchBox.sendKeys(arananKelime + Keys.ENTER);
+        //searchBox.submit();
 
         //c. Google'da görüntülenen ilgili sonuçların sayısını yazdırın
         WebElement goruntulenmeSayisi = driver.findElement(By.id("result-stats"));
