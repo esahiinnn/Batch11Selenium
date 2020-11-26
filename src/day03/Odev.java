@@ -31,7 +31,8 @@ public class Odev {
         //b. Search(ara) “city bike”
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("city bike");
+        String arananKelime = "city bike";
+        searchBox.sendKeys(arananKelime);
         searchBox.submit();
 
         //c. Google'da görüntülenen ilgili sonuçların sayısını yazdırın
