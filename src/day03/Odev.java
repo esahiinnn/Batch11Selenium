@@ -38,7 +38,7 @@ public class Odev {
 
         //c. Google'da görüntülenen ilgili sonuçların sayısını yazdırın
         WebElement goruntulenmeSayisi = driver.findElement(By.id("result-stats"));
-        System.out.println(goruntulenmeSayisi.getText());
+        System.out.println(arananKelime + " icin sonuc sayisi \"" +goruntulenmeSayisi.getText()+"\"");
 
         //d. “Shopping” e tıklayın.
         WebElement shopping = driver.findElement(By.linkText("Alışveriş"));
