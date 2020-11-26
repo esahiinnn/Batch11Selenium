@@ -34,7 +34,7 @@ public class Odev {
         WebElement searchBox = driver.findElement(By.name("q"));
         String arananKelime = "city bike";
         searchBox.sendKeys(arananKelime + Keys.ENTER);
-        //searchBox.submit();
+        //searchBox.submit(); bu kodda calisir, Keys.ENTER veya submit() sizin tercihinize kalmis
 
         //c. Google'da görüntülenen ilgili sonuçların sayısını yazdırın
         WebElement goruntulenmeSayisi = driver.findElement(By.id("result-stats"));
