@@ -41,8 +41,8 @@ public class XpathTest {
         //5- Delete butonunun gorunur olmadigini test edin
             try{
                 deleteButton.click();
-            }catch(Exception e){
+            }catch(Exception e) {
                 System.out.println("Delete butonu yoktur");
-        }
+            }
     }
 }
